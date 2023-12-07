@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervacija teren 1</title>
+
+    <style>
+        * {box-sizing: border-box}
+
+        .container {
+        padding: 16px;
+        }
+
+        input[type=text] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        }
+
+        hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+        }
+
+        .potvrdibtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        }
+
+        .potvrdibtn:hover {
+        opacity:1;
+        }
+
+       
+        a {
+        color: rgb(5, 134, 255);
+        }
+
+    </style>
+</head>
+<body>
+
+        <div class="container">
+          <h1>Rezerviraj vanjski teren 1</h1>
+          
+          <hr>
+      
+          <label for="prezime"><b>Prezime</b></label>
+          <input type="text" placeholder="Unesite prezime" name="prezime" id="prezime" required>
+        
+          <label for="termin" style="font-weight: bold;">Odaberi termin:</label>
+          
+          <form action="">
+
+           <select class=" termin"id="termin" name="termin" required>
+            <option value="14-15">14:00 - 15:00</option>
+            <option value="15-16">15:00 - 16:00</option>
+            <option value="16-17">16:00 - 17:00</option>
+            <option value="17-18">17:00 - 18:00</option>
+            <option value="18-19">18:00 - 19:00</option>
+            <option value="19-20">19:00 - 20:00</option>
+            <option value="20-21">20:00 - 21:00</option>
+            <option value="21-22">21:00 - 22:00</option>
+            <option value="22-23">22:00 - 23:00</option>
+         </select>
+         </form>
+          
+      
+          <hr>
+      
+          <button type="submit" class="potvrdibtn">Potvrdi rezervaciju</button>
+        </div>
+      
+    
+</body>
+</html>
